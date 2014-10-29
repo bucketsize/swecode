@@ -1,0 +1,16 @@
+!!! XML
+!!!
+%html
+  %head
+    %title Myspace
+    :css
+      .formitem{
+        border: 1px solid #f00
+        }
+  %body
+    %h1 This is a form.
+    %p You need too fill it ...
+    %form{action: "/foo/bar", method: "POST"}
+      .formitem
+        %label Name
+        %input{type: 'text', name:'name'}
